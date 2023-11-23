@@ -1,9 +1,16 @@
+@font-face {
+  font-family: 'RobotoMonoNerd';
+  src: url('fonts/RobotoMonoNerdFontMono-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
 	scroll-behavior: smooth;
 }
 
 body {
-  font-family: Monospace;
+  font-family: "RobotoMonoNerd";
   margin: 0px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -42,7 +49,7 @@ header, #landing_page_header {
 .logo {
   margin-right: auto;
   font-weight: 1000;
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .nav__links {
@@ -54,8 +61,9 @@ header, #landing_page_header {
 .nav__links a,
 .cta,
 .overlay__content a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "RobotoMonoNerd", Monospace, sans-serif;
   font-weight: 500;
+  font-size: 20px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -99,7 +107,6 @@ header, #landing_page_header {
 /*   vertical-align: text-top; */
 /*   text-align: left; */
 /*   font-size: large; */
-/*   font-family: "Montserrat", sans-serif; */
 /* } */
 
 .about {
@@ -116,18 +123,12 @@ header, #landing_page_header {
     flex-direction: column;
     justify-content: center;
     vertical-align: text-top;
-    text-align: left;
-    font-size: large;
-    font-family: "Montserrat", sans-serif;
+    text-align:justify;
+    font-size: 20px;
+    font-family: "RobotoMonoNerd", Monospace, sans-serif;
     padding: 30px;
-    border: 2px dashed;
+    /* border: 2px dashed; */
     border-radius: 8px;
-}
-
-.about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
 }
 
 .about-image img {
@@ -137,8 +138,13 @@ header, #landing_page_header {
     object-fit: cover;
 }
 
+.about-image {
+    margin: 20px auto;
+}
+
 .about-text {
     width: 70%;
+    margin: 20px auto;
 }
 
 .highlight__ubuntu {
@@ -164,10 +170,14 @@ header, #landing_page_header {
 
 .contacts {
   margin: 40px auto 0 auto;
+  width: 70%;
 }
 
 .contact-links {
     font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .contact-link {
