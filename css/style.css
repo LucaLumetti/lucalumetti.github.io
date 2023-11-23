@@ -155,6 +155,11 @@ header, #landing_page_header {
   color: #019833;
 }
 
+.highlight__aoc {
+  color: #00cc00;
+  text-shadow: 0 0 2px #00cc00, 0 0 5px #00cc00;
+}
+
 .highlight {
   color: #4184DD;
 }
