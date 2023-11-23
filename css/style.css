@@ -39,11 +39,13 @@ header, #landing_page_header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 30px 10%;
+  padding: 30px 1em;
   position: absolute;
+  max-width: 1300px;
   top: 0;
   left: 0;
   right: 0;
+  margin: 0 auto;
 }
 
 .logo {
@@ -113,10 +115,10 @@ header, #landing_page_header {
     overflow: auto;
     scroll-snap-align: start;
     position: relative;
-    width: 55vw;
-    top: 50vh;
+    max-width: 900px;
+    top: 150px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     color: white;
     background-color: rgba(0, 0, 0, 0.0);
     display: flex;
@@ -126,7 +128,6 @@ header, #landing_page_header {
     text-align:justify;
     font-size: 20px;
     font-family: "RobotoMonoNerd", Monospace, sans-serif;
-    padding: 30px;
     /* border: 2px dashed; */
     border-radius: 8px;
 }
@@ -143,7 +144,6 @@ header, #landing_page_header {
 }
 
 .about-text {
-    width: 70%;
     margin: 20px auto;
 }
 
@@ -174,8 +174,8 @@ header, #landing_page_header {
 }
 
 .contacts {
-  margin: 40px auto 0 auto;
-  width: 70%;
+  margin: 20px auto 0 auto;
+  width: 100%;
 }
 
 .contact-links {
@@ -199,3 +199,43 @@ header, #landing_page_header {
 /*     font-size: 1.5em; */
 /*     vertical-align: middle; */
 /* } */
+
+/* MOBILE */
+@media only screen and (max-width: 1200px) {
+  header, #landing_page_header {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .logo {
+    margin: 0 auto 1em auto;
+  }
+
+  .about {
+      overflow: auto;
+      scroll-snap-align: start;
+      position: relative;
+      /* width: 50em; */
+      left: 50%;
+      transform: translate(-50%, 0);
+      color: white;
+      background-color: rgba(0, 0, 0, 0.0);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      vertical-align: text-top;
+      text-align:justify;
+      font-size: 20px;
+      font-family: "RobotoMonoNerd", Monospace, sans-serif;
+      /* border: 2px dashed; */
+      border-radius: 8px;
+      padding: 5%;
+  }
+}
