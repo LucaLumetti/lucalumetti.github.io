@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <link rel="preload" as="image" href="images/aerial.png">
     </head>
     <body>
         <header id="landing_page_header">
@@ -22,8 +23,8 @@
         </header>
 
         <div class="about">
-                <div class="about-image">
-                    <img src="images/profile.jpg" alt="That's me!">
+                <div class="about-image" id="about-image">
+                    <img src="images/profile.jpg" alt="That's me!" id="profile-image">
                 </div>
                 <div class="about-text">
                     <p>
@@ -39,10 +40,10 @@
                     applications</a>. My interests extend to
                     competitive programming and CTFs, and I have taken
                     parto into challenges like <a class="highlight__aoc" href="https://adventofcode.com/">Advent of Code</a>, Google
-                    Foobar, Reply, etc. Beyond my tech pursuits, I am actively
-                    involved in <span class="highlight">Rock Climbing</span>, achieving top rankings in
+                    Foobar, Reply, etc. Beyond my tech pursuits, I actively
+                    practice <span class="highlight">Rock Climbing</span>, achieving top rankings in
                     national competitions, and perform shows doing <span
-                    class="highlight">Aerial Silks</span> and <span
+                    class="highlight underline" onclick="rotateImage()" style="cursor: pointer">Aerial Silks</span> and <span
                     class="highlight">Acrobatic Dance</a>.
                     </p>
                 </div>
@@ -60,5 +61,25 @@
                 </p>
             </div>
         </div>
+        <script>
+        let isRotated = false;
+
+        function rotateImage() {
+            const container = document.getElementById('about-image');
+            const image = document.getElementById('profile-image');
+
+            isRotated = !isRotated;
+
+            if (isRotated) {
+                container.style.transform = 'rotateY(89.999deg)';
+                setTimeout(()=>{image.src = 'images/aerial.png'}, 500)
+                setTimeout(()=>{container.style.transform = 'rotateY(180deg)';}, 525)
+            } else {
+                container.style.transform = 'rotateY(89.999deg)';
+                setTimeout(()=>{image.src = 'images/profile.jpg'}, 500)
+                setTimeout(()=>{container.style.transform = 'rotateY(0deg)';}, 525)
+            }
+        }
+        </script>
     </body>
 </html>

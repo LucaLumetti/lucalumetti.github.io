@@ -115,7 +115,7 @@ header, #landing_page_header {
     overflow: auto;
     scroll-snap-align: start;
     position: relative;
-    max-width: 900px;
+    max-width: 605px;
     top: 150px;
     left: 50%;
     transform: translate(-50%, 0);
@@ -140,6 +140,8 @@ header, #landing_page_header {
 
 .about-image {
     margin: 20px auto;
+    perspective: 1000px;
+    transition: transform 0.5s ease;
 }
 
 .about-text {
@@ -191,6 +193,7 @@ header, #landing_page_header {
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
 }
 
 /* .dot { */
