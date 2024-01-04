@@ -16,6 +16,7 @@ body {
   overflow-x: hidden;
   background: #000;
   font-size: 20px;
+  padding: 12px;
 }
 
 * {
@@ -116,7 +117,7 @@ header, #landing_page_header {
     scroll-snap-align: start;
     position: relative;
     max-width: 605px;
-    top: 150px;
+    margin-top: 120px;
     left: 50%;
     transform: translate(-50%, 0);
     color: white;
