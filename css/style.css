@@ -113,7 +113,7 @@ header, #landing_page_header {
 /* } */
 
 .about {
-    overflow: auto;
+    /* overflow: auto; */
     scroll-snap-align: start;
     position: relative;
     max-width: 605px;
@@ -225,7 +225,7 @@ header, #landing_page_header {
   }
 
   .about {
-      overflow: auto;
+      /* overflow: auto; */
       scroll-snap-align: start;
       position: relative;
       /* width: 50em; */
