@@ -37,6 +37,17 @@ body {
   left: 100px;
 }
 
+#drawing {
+   animation: rotate 300s infinite linear;
+   display: block;
+   margin: 0 auto;
+}
+
+@keyframes rotate {
+   from { transform: rotate(0deg); }
+   to { transform: rotate(360deg); }
+}
+
 header, #landing_page_header {
   display: flex;
   justify-content: flex-end;
@@ -126,10 +137,11 @@ header, #landing_page_header {
     flex-direction: column;
     justify-content: center;
     vertical-align: text-top;
-    text-align:justify;
+    text-align: justify;
     font-family: "RobotoMonoNerd", Monospace, sans-serif;
     /* border: 2px dashed; */
     border-radius: 8px;
+    line-height: 1.4em;
 }
 
 .about-image img {
@@ -242,5 +254,11 @@ header, #landing_page_header {
       /* border: 2px dashed; */
       border-radius: 8px;
       padding: 5%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about {
+    text-align: center;
   }
 }
