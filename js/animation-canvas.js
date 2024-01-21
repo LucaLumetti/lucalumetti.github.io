@@ -1,8 +1,15 @@
 let canvas = document.createElement('canvas');
 
-let size = Math.floor(Math.min(window.innerWidth, window.innerHeight)/1.1)
+let width = window.innerWidth
+let height = window.innerHeight
 
-canvas.style.cssText = `width:${size}px;height:${size}px`;
+let size = Math.min(width, height)
+let top_margin = Math.max((height-size)/2, 90)
+size = Math.floor(size/1.1)
+
+console.log('size: ' + size, 'width: ' + width, 'height: ' + height, 'top_margin: ' + top_margin)
+
+canvas.style.cssText = `width:${size}px;height:${size}px;margin-top:${top_margin}px;`;
 canvas.id = 'drawing'
 document.body.appendChild(canvas);
 
@@ -45,12 +52,7 @@ class Animation {
     this.canvasData = this.ctx.getImageData(0, 0, this.size, this.size);
   }
 
-  drawPixel (x, y, r, g, b, a) {
-    if(this.interval != null && this.total_points > 1000*500){
-      clearInterval(this.interval)
-      console.log('Animation stopped')
-    }
-
+  drawPixel (x, y, r, g, b) {
     let scale_min = Math.min(this._min_x, this._min_y)
     let scale_max = Math.max(this._max_x, this._max_y)
 
@@ -62,7 +64,7 @@ class Animation {
     this.canvasData.data[index + 0] = r;
     this.canvasData.data[index + 1] = g;
     this.canvasData.data[index + 2] = b;
-    this.canvasData.data[index + 3] = a;
+    this.canvasData.data[index + 3] += 20;
   }
 
   updateCanvas() {
@@ -98,9 +100,14 @@ class Animation {
   }
 
   add_points(){
+    if(this.interval != null && this.total_points > 1000*200){
+      clearInterval(this.interval)
+      console.log('Animation stopped')
+    }
+
     for(let n = 0; n < 10000; n++){
       this.step(this.x, this.y)
-      this.drawPixel(this.x, this.y, 255, 255, 255, 255)
+      this.drawPixel(this.x, this.y, 255, 255, 255)
     }
     this.total_points += 1000
     this.updateCanvas()
