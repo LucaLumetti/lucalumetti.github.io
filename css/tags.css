@@ -1,0 +1,106 @@
+/* TAGS STYLES */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid;
+}
+
+/* Approved tags with diverse colors */
+.tag.segmentation {
+  background: #9B59B6;
+  border-color: #9B59B6;
+  color: white;
+}
+
+.tag.medical-imaging {
+  background: #E74C3C;
+  border-color: #E74C3C;
+  color: white;
+}
+
+.tag.cuda {
+  background: #76B900;
+  border-color: #76B900;
+  color: white;
+}
+
+.tag.cpp {
+  background: #00599C;
+  border-color: #00599C;
+  color: white;
+}
+
+.tag.algorithm {
+  background: #FF9500;
+  border-color: #FF9500;
+  color: white;
+}
+
+.tag.wsi {
+  background: #2ECC71;
+  border-color: #2ECC71;
+  color: white;
+}
+
+.tag.mil {
+  background: #AD4E85;
+  border-color: #AD4E85;
+  color: white;
+}
+
+.tag.continual-learning {
+  background: #3498DB;
+  border-color: #3498DB;
+  color: white;
+}
+
+.tag.challenge {
+  background: #E67E22;
+  border-color: #E67E22;
+  color: white;
+}
+
+.tag.dataset {
+  background: #1ABC9C;
+  border-color: #1ABC9C;
+  color: white;
+}
+
+.tag.model-merging {
+  background: #D35400;
+  border-color: #D35400;
+  color: white;
+}
+
+.tag.task-vector {
+  background: #8E44AD;
+  border-color: #8E44AD;
+  color: white;
+}
+
+.tag.classification {
+  background: #34495E;
+  border-color: #34495E;
+  color: white;
+}
+
+/* Mobile Responsiveness for Tags */
+@media only screen and (max-width: 500px) {
+  .project-tags {
+    gap: 5px;
+  }
+  
+  .tag {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+}

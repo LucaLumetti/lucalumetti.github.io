@@ -3,13 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Luca Lumetti - About</title>
+        <title>Luca Lumetti - Projects</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/tags.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
-        <link rel="preload" as="image" href="images/aerial.png">
+        <script src="https://kit.fontawesome.com/7d6d1a5cd6.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header id="landing_page_header">
@@ -22,12 +23,27 @@
             </nav>
         </header>
 
-        <div class="about">
-                <div class="about-text">
-                    <p>
-                    I'm still working on this page. Meanwhile you can check <a href="https://github.com/LucaLumetti"><span class="highlight">my Github profile</span></a> where you will find nearly all of my projects.
-                    </p>
-                </div>
+        <div class="projects-container">
+            <div class="projects-header">
+                <p class="projects-description">
+                    A curated selection of my research and development projects.
+                    Click on any project to explore the full repository.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Projects will be loaded dynamically -->
+                <div class="loading-message">Loading projects...</div>
+            </div>
+
+            <div class="projects-footer">
+                <a href="https://github.com/LucaLumetti" class="github-link">
+                    <i class="fa-brands fa-github"></i>
+                    <span class="highlight">Visit my GitHub profile</span>
+                </a>
+            </div>
         </div>
+
+        <script src="js/project-loader.js"></script>
     </body>
 </html>
