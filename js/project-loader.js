@@ -6,32 +6,24 @@ class ProjectLoader {
                 'html': 'unet-transplant.html'
             },
             'Segmenting Maxillofacial Structures in CBCT Volumes': {
-                'link': 'https://github.com/LucaLumetti',
-                'html': 'maxillofacial-cbct.html'
-            },
-            'Accurate 3D Medical Image Segmentation with Mambas': {
-                'link': 'https://github.com/LucaLumetti',
-                'html': 'accurate-mambas.html'
-            },
-            'Enhancing Patch-Based Learning for the Segmentation of the Mandibular Canal': {
-                'link': 'https://github.com/LucaLumetti',
-                'html': 'mandibular-canal.html'
-            },
-            'Location Matters: Harnessing Spatial Information to Enhance the Segmentation of the Inferior Alveolar Canal in CBCTs': {
-                'link': 'https://github.com/LucaLumetti',
-                'html': 'location-matters.html'
-            },
-            'A State-of-the-Art Review with Code about Connected Components Labeling on GPUs': {
-                'link': 'https://github.com/LucaLumetti',
-                'html': 'connected-components.html'
-            },
-            'Buffer-MIL: Robust multi-instance learning with a buffer-based approach': {
-                'link': 'https://github.com/LucaLumetti',
-                'html': 'buffer-mil.html'
+                'link': 'https://github.com/AImagelab-zip/ToothFairy',
+                'html': 'toothfairy2-cvpr.html'
             },
             'Segmenting the Inferior Alveolar Canal in CBCTs Volumes: the ToothFairy Challenge': {
-                'link': 'https://github.com/LucaLumetti',
-                'html': 'tooth-fairy.html'
+                'link': 'https://github.com/AImagelab-zip/ToothFairy',
+                'html': 'toothfairy1-tmi.html'
+            },
+            'Enhancing Patch-Based Learning for the Segmentation of the Mandibular Canal': {
+                'link': 'https://github.com/AImagelab-zip/alveolar_canal',
+                'html': 'enhancing-access.html'
+            },
+            'A State-of-the-Art Review with Code about Connected Components Labeling on GPUs': {
+                'link': 'https://github.com/prittt/YACCLAB',
+                'html': 'cclgpu-tpds.html'
+            },
+            'Buffer-MIL: Robust multi-instance learning with a buffer-based approach': {
+                'link': 'https://github.com/aimagelab/mil4wsi',
+                'html': 'buffer-mil.html'
             }
         };
 
