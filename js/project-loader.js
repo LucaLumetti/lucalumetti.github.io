@@ -24,6 +24,10 @@ class ProjectLoader {
             'Buffer-MIL: Robust multi-instance learning with a buffer-based approach': {
                 'link': 'https://github.com/aimagelab/mil4wsi',
                 'html': 'buffer-mil.html'
+            },
+            'ZipLeague: Simple and extendible ranking platform': {
+                'link': 'https://github.com/LucaLumetti/ZipLeague',
+                'html': 'zipleague.html'
             }
         };
 
